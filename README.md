@@ -1,4 +1,13 @@
+A simple example in react js for explaining asynchronous react js
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Project uses napster api for getting song details 
+
+Can refer below link for more detail about API
+
+https://developer.napster.com
 
 ## Available Scripts
 

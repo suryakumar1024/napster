@@ -1,5 +1,8 @@
 .App {
-  text-align: center;
+  text-align: center;  
+  height: 100vh;
+  width:100vw;
+  background: #e7e8e9;
 }
 
 .App-logo {
@@ -30,4 +33,23 @@
   to {
     transform: rotate(360deg);
   }
+}
+.music_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.audiotrackwrapper{
+  background: #dffbfb;
+  border:3px solid #e7e8e9;
+  flex:1;
+}
+.audiotrack {
+  background: url('https://i.pinimg.com/474x/2b/ee/76/2bee76b1e82de7e24b2180a76b753ee6--curriculum-audio.jpg') no-repeat;
+  flex:1;
+  background-size: contain;
+  height: 100px;
+}
+.audiotrackright {
+  flex:1;
 }

@@ -1,0 +1,2 @@
+export const REQUEST_MUSIC = 'REQUEST_MUSIC'
+export const RECEIVING_MUSIC = 'RECEIVING_MUSIC'
