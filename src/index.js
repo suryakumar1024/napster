@@ -9,11 +9,20 @@ import {createStore, applyMiddleware} from 'redux';
 import {Provider} from 'react-redux';
 import thunk from 'redux-thunk';
 import {logger} from 'redux-logger'
+import {loadstate, savestate} from './localstorage'
+import throttle from 'lodash/throttle'
+
+const localcopy = loadstate();
 
 const store =  createStore(
     reducer,
+    localcopy,
     applyMiddleware(thunk, logger)
 )
+
+store.subscribe(throttle(() => {
+    savestate(store.getState());
+}, 1000));
 
 ReactDOM.render(
     <Provider store={store}>

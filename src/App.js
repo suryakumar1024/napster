@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
-import './App.css';
 import {apiconnecter} from './actions'
-import MApp from './components/mindex'
 import { connect } from 'react-redux';
+
+import MApp from './components/mindex'
+import './App.css';
 
 class App extends Component {
   constructor(props){
